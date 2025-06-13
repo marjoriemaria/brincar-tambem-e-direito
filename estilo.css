@@ -1,0 +1,295 @@
+/* Fonte divertida para o site */
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Fredoka+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comic Neue', cursive;
+    background: #fff9e6;
+    color: #333;
+    padding-top: 80px;
+    line-height: 1.6;
+}
+
+header {
+    background: #ff6f91;
+    color: white;
+    padding: 25px 10px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    z-index: 100;
+}
+
+header h1 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 2.6rem;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #ffe9f1;
+}
+
+nav {
+    background: #ffadc6;
+    position: fixed;
+    top: 80px;
+    width: 100%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12);
+    z-index: 99;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 12px 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #641e16;
+    font-weight: 700;
+    font-size: 1.15rem;
+    text-decoration: none;
+    background: #ffdae1;
+    padding: 8px 15px;
+    border-radius: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: inline-block;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    background: #ff6f91;
+    color: white;
+    outline: none;
+    box-shadow: 0 4px 12px #ff6f91;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto 40px;
+    padding: 0 25px 30px;
+}
+
+section {
+    background: #fff0f6;
+    border-radius: 18px;
+    box-shadow: 0 6px 12px rgba(255, 111, 145, 0.3);
+    padding: 30px 30px 40px;
+    margin-bottom: 50px;
+    transition: box-shadow 0.3s ease;
+}
+
+section:hover {
+    box-shadow: 0 10px 20px rgba(255, 111, 145, 0.6);
+}
+
+h2 {
+    font-family: 'Fredoka One', cursive;
+    color: #d6336c;
+    font-size: 2rem;
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+p {
+    font-size: 1.15rem;
+    margin-bottom: 15px;
+}
+
+ul {
+    margin-left: 22px;
+    margin-bottom: 15px;
+    list-style: inside disc;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 6px 12px rgba(255, 111, 145, 0.4);
+    margin-bottom: 20px;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    border: none;
+}
+
+.btn {
+    display: block;
+    max-width: 220px;
+    margin: 25px auto 0;
+    background: #ff6f91;
+    color: white;
+    font-weight: 700;
+    font-size: 1.3rem;
+    padding: 14px 30px;
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 6px 14px rgba(255, 111, 145, 0.5);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+    background: #d6336c;
+    box-shadow: 0 10px 22px rgba(214, 51, 108, 0.7);
+    outline: none;
+}
+
+footer {
+    text-align: center;
+    padding: 30px 15px;
+    background: #ffadc6;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #641e16;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    box-shadow: 0 -4px 10px rgba(255, 111, 145, 0.3);
+}
+
+.video-links {
+    list-style: none;
+    padding-left: 0;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.video-links li {
+    background: #ffe6f0;
+    /* rosa pastel clarinho */
+    margin-bottom: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(255, 111, 145, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+.video-links li:hover {
+    box-shadow: 0 8px 16px rgba(255, 111, 145, 0.4);
+}
+
+.video-links a {
+    display: block;
+    padding: 18px 25px;
+    color: #d6336c;
+    /* rosa mais forte */
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-family: 'Comic Neue', cursive;
+    border-radius: 12px;
+}
+
+.video-links a:hover,
+.video-links a:focus {
+    background: #ffd7e3;
+    /* rosa clarinho para hover */
+    color: #a3244f;
+    /* rosa escuro para hover */
+    outline: none;
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 640px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+
+    main {
+        padding: 0 15px 30px;
+    }
+
+    section {
+        padding: 25px 20px 35px;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    p,
+    ul li {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 1.15rem;
+        padding: 12px 25px;
+        max-width: 100%;
+    }
+
+    .btn-voltar{
+        display: none;
+    }
+
+}
+#rpg-link-section {
+    text-align: center;
+    background-color: #f0f8ff;
+    padding: 40px 20px;
+    margin: 40px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+#rpg-link-section h3 {
+    font-size: 1.8em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+#rpg-link-section p {
+    font-size: 1.1em;
+    color: #34495e;
+    margin-bottom: 25px;
+}
+
+.btn-rpg {
+    text-decoration: none;
+    background-color: #d6336c;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.btn-rpg:hover {
+    background-color: #f8a6e0;
+}
